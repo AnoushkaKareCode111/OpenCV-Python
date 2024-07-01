@@ -1,0 +1,10 @@
+import cv2
+cute=cv2.VideoCapture(0)       #0 is the number for default video camera , for subsequent ones you have to link them 
+cute.set(3,640)            #3 is the index number for width
+cute.set(4,480)            #4 is the index number for height
+cute.set(10,100)           #10 is the index number for brightness
+while True:
+  success,img=cute.read()
+  cv2.imshow("video",img)
+  cv2.WaitKey(1) ==13
+  break
