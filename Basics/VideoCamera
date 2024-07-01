@@ -6,5 +6,5 @@ cute.set(10,100)           #10 is the index number for brightness
 while True:
   success,img=cute.read()
   cv2.imshow("video",img)
-  cv2.WaitKey(1) ==13
-  break
+  if cv2.waitKey(1) ==13
+     break
