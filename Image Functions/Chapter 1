@@ -1,0 +1,20 @@
+import cv2
+import numpy as np
+
+img=cv2.imread("image location")
+kernels=np.ones((5,5),np.uint8)
+  
+#BLACK & WHITE CONVERSION
+bwimg=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+
+#BLURRING AN IMAGE
+blur=cv2.GaussianBlur(bwimg,(7,7),0)
+
+#EDGE DETECTION
+edge=cv2.Canny(blur,100,120)
+
+#DILATION OF AN IMAGE
+dilate=cv2.dilate(edge,kernels,iterations=3)
+cv2.imshow("bw",dilate)
+cv2.waitKey(0)
+
