@@ -1,7 +1,15 @@
 import cv2
 import numpy as np
 
-img=cv2.imread("location")
+img=cv2.imread("C:\\Users\Janendra Kaushik\\Pictures\\Look Out Mountain Look Out Sea linocut print.jpg")
+print(img.shape) #prints the dimensions of the picture 
 
 #RESIZING
-imgResize=
+imgResize=cv2.resize(img,(200,200))
+cv2.imshow("resized",imgResize)
+cv2.waitKey(0)
+
+#CROPPING AN IMAGE
+imgCrop=img[0:100,0:100]
+cv2.imshow("la",imgCrop)
+cv2.waitKey(0)
