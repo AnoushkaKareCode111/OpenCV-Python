@@ -5,7 +5,7 @@ import numpy as np
 img=np.zeros((512,512,3))
 
 #LINE
-**cv2.line**(img,(0,0),(256,256),(0,0,255),1)
+<b>cv2.line</b>(img,(0,0),(256,256),(0,0,255),1)
 
 #RECTANGLE
 **cv2.rectangle**(img,(0,0),(350,350),(255,0,0),1)
