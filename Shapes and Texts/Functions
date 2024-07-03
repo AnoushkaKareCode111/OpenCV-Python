@@ -5,15 +5,15 @@ import numpy as np
 img=np.zeros((512,512,3))
 
 #LINE
-cv2.line(img,(0,0),(256,256),(0,0,255),1)
+**cv2.line**(img,(0,0),(256,256),(0,0,255),1)
 
 #RECTANGLE
-cv2.rectangle(img,(0,0),(350,350),(255,0,0),1)
+**cv2.rectangle**(img,(0,0),(350,350),(255,0,0),1)
 
 #CIRCLE
-cv2.circle(img,(300,300),40,(100,100,100),2)
+**cv2.circle**(img,(300,300),40,(100,100,100),2)
 
 #TEXT
-cv2.putText(img,'success',(200,200),cv2.FONT_ITALIC,1,(100,100,100),1)
+**cv2.putText**(img,'success',(200,200),cv2.FONT_ITALIC,1,(100,100,100),1)
 cv2.imshow("banao",img)
 cv2.waitKey(0)
